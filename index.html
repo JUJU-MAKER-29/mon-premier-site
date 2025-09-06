@@ -2,27 +2,47 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon premier site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Mon Site Moderne</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur SimpliCode 🚀</h1>
-    <p>Hébergé gratuitement avec GitHub Pages</p>
+    <div class="logo">MonSite 🚀</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <button onclick="changerTexte()">Bouton 1</button>
-    <p id="message">Bonjour, visiteur !</p>
-  </main>
+    <section class="hero">
+      <h1>Bienvenue sur mon site moderne !</h1>
+      <p>Ce site est responsive, interactif et élégant ✨</p>
+      <button onclick="changerTexte()">Clique-moi</button>
+      <p id="message">Bonjour, visiteur !</p>
+    </section>
 
-  <main>
-    <button onclick="changerTexte2()">Bouton 2</button>
-    <p id="message2">Bonjour, visiteur !</p>
+    <section class="features">
+      <h2>Fonctionnalités</h2>
+      <div class="cards">
+        <div class="card">HTML / CSS</div>
+        <div class="card">JavaScript interactif</div>
+        <div class="card">Responsive & Mobile Friendly</div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 - Mon premier site</p>
+    <p>© 2025 - Mon site moderne</p>
   </footer>
 
   <script src="script.js"></script>
